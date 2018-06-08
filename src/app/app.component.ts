@@ -7,11 +7,12 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login'; //
 import { ArtikelPage } from '../pages/artikel/artikel'; //
 import { Artikel2Page } from '../pages/artikel2/artikel2'; //
+import { TabsPage } from '../pages/tabs/tabs';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = ArtikelPage; //
+  rootPage:any = TabsPage; //
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
